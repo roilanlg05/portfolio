@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin: 0;
+  text-decoration: none;
+  color: rgb(123, 121, 121);
+  list-style: none;
+}
+
+.img_icons {
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+
+article {
+  display: block;
+  width: 96%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 0px 5px 0;
+  border-radius: 5px;
+  animation-duration: 1s;
+}
+
+.name{
+  font-size: 3rem !important;
+}
+
+.header {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 0px 5px 0;
+  background: rgb(231, 229, 229);
+}
+
+ul{
+  margin: 10px;
+  padding: 0 0 0 20px;
+}
+
+li{
+  margin: 10px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  margin: 20px 0 0 0;
+  width: 180px;
+  height: 30px;
+  background: rgb(156, 156, 156);
+  border-radius: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+h3{
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+h4{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+span {
+  margin-left: 20px;
+}
+
+.footer {
+  width: 100%;
+  background: rgb(230, 229, 229);
+  padding: 50px 0;
+}
+
+.h1_footer {
+  display: block;
+  font-size: 30px;
+  width: 350px;
+  margin-bottom: 20px;
+  animation-duration: 1.5s;
+  text-align: center
+}
+
+.h2_footer {
+  display: block;
+  width: 200px;
+  animation-duration: 1.5s;
+  text-align: center
+}
+
+section{
+  overflow: hidden;
+}
+
+
+/*ANIMATIONS*/
+
+@keyframes entry_left {
+  0% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes exit_left {
+  0% {
+    transform: translate(0%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+
+
+@keyframes entry_right {
+  0% {
+    transform: translate(100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes exit_right {
+  0% {
+    transform: translate(100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  article{
+    width: 49%;
+  }
+  section{
+    padding: 20px;
+  }
+
+}

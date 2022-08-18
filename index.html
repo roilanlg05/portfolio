@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <h1 class="mt-5 text-center">
+        Hi! <br> 
+        I'm Roilan
+    </h1>
+
+    <h1 class="text-center code fs-1"> </h1> 
+
+   <div id="spinner" class="m-auto spinner">
+       <div class="item n8" id="item"></div>
+       <div class="item n6" id="item"></div>
+       <div class="item n0" id="item"></div>
+       <div class="item n4" id="item"></div>
+       <div class="item n2" id="item"></div>
+
+    </div> 
+
+https://github.com/roilanlg05/portfolio.git
+
+    <style>
+
+        .code{
+            font-size: 50px !important;
+            font-weight: bold;
+            color: rgb(70, 69, 69);
+        }
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 15%;
+        }
+        .item{
+            background: #333;
+            border-radius: 50%;
+            position: absolute;
+            margin: 10px;
+        }
+        
+        .n0{
+            top: 50px;
+            left: -3px;
+            width: 10%;
+            height: 10%;
+        }
+        
+        .n2{
+            top: 30px;
+            left: -17px;
+            width: 15%;
+           height: 15%;
+        }    
+        
+        .n4{
+            left: -15px;
+            top: -0px;
+            width: 20%;
+            height: 20%;
+        }
+
+        
+        .n6{
+            left: 12px;
+            top: -22px;
+            width: 25%;
+            height: 25%;
+        }
+
+        .n8{
+            top: -5px;
+            left: 45px;
+            width: 30%;
+            height: 30%;
+        }
+
+       .spinner{
+           top: 50%;
+           position: relative;
+           width: 70px;
+           height: 70px;
+           border-radius: 50%;
+           animation-name: spinn;
+           animation-duration: 1s;
+           animation-delay: 0;
+           animation-iteration-count: 3;
+       }
+
+       
+       @keyframes spinn {
+                0%{
+                    transform: rotate(0deg);
+                    
+                }               
+
+                100%{
+                    transform: rotate(360deg);
+                }
+
+           }
+
+   </style>
+
+   <script>
+       let spinner = document.getElementById("spinner")
+       spinner.addEventListener('animationend', ()=> location.href = "html/portfolio.html")
+       let code = document.querySelector('.code').textContent = ' </>'
+   </script>
+</body>
+</html>
