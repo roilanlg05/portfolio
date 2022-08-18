@@ -22,19 +22,15 @@ const cb = (entries) => {
 
         if(entry.isIntersecting && entry.target.classList.contains('h1_footer') ){
             entry.target.style.animationName = 'entry_left'
-            console.log(entry.target)
         }
         if(entry.target.classList.contains('h2_footer')){
             entry.target.style.animationName = 'entry_left'
-            console.log(entry.target)
         }
         if(!entry.isIntersecting && entry.target.classList.contains('h1_footer')){
             entry.target.style.animationName = 'exit_left'
-            console.log(entry.target)
         }
         if(!entry.isIntersecting && entry.target.classList.contains('h2_footer')){
             entry.target.style.animationName = 'exit_left'
-            console.log(entry.target)
         }
         
         
